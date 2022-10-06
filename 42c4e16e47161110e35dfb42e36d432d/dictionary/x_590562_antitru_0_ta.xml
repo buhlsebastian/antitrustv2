@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Trade Associations" max_length="40" name="x_590562_antitru_0_ta" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Are there examples of documents or meeting agendas?" max_length="40" name="are_there_examples_of_documents_or_meeting_agendas" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="City" max_length="40" name="city" type="string"/>
+        <element attributes="encode_utf8=false" label="Country" max_length="32" name="country" reference="core_country" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Country Group" max_length="40" name="country_group" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Documentation" max_length="40" name="documentation" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Documentation Link" max_length="1024" name="documentation_link" type="url"/>
+        <element label="Does the association collect membership fee?" max_length="40" name="does_the_association_collect_membership_fee" type="boolean"/>
+        <element label="Does the association have code of conduct?" max_length="40" name="does_the_association_have_code_of_conduct" type="boolean"/>
+        <element label="Does the association hold social events?" max_length="40" name="does_the_association_hold_social_events" type="boolean"/>
+        <element label="Does the association set technical standards?" max_length="40" name="does_the_association_set_technical_standards" type="boolean"/>
+        <element label="Does the trade association have a constitution/articles of association?" max_length="40" name="does_the_trade_association_have_a_constitution_articles_of_association" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Do lawyers attend meetings of the association?" max_length="40" name="do_lawyers_attend_meetings_of_the_association" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="How frequently the association holds social events?" max_length="40" name="how_frequently_the_association_holds_social_events" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Import Identifier" max_length="40" name="import_identifier" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="approved" label="LPCx Approval" max_length="40" name="lpcx_approval" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Approved" value="approved"/>
+                <element inactive_on_update="false" label="Pending" value="pending"/>
+                <element inactive_on_update="false" label="Rejected" value="rejected"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Membership fee frequence" max_length="40" name="membership_fee_frequence" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Name" max_length="309" name="name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Other members in the association" max_length="80" name="other_members_in_the_association" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Purpose and scope of work of the association" max_length="40" name="purpose_and_scope_of_work_of_the_association" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Street" max_length="40" name="street" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Website" max_length="1024" name="website" type="url"/>
+        <element attributes="edge_encryption_enabled=true" label="What topics are generally discussed in the association?" max_length="40" name="what_topics_are_generally_discussed_in_the_association" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Where do the social events take place?" max_length="40" name="where_do_the_social_events_take_place" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="ZIP Code" max_length="40" name="zip_code" type="string"/>
+        <index name="index">
+            <element name="country"/>
+        </index>
+    </element>
+</database>
